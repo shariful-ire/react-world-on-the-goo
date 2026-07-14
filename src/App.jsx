@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import Countries from './components/Countries/Countries';
+import Footer from './components/Countries/Footer/Footer'
 
 const countriesPromise= fetch('https://openapi.programming-hero.com/api/all')
 .then(res=>res.json())
@@ -11,6 +12,8 @@ const App = () => {
       <Suspense  fallback= {<h1>Country Data loading...</h1>}>
         <Countries countriesPromise={countriesPromise}></Countries>
       </Suspense>
+
+      <Footer></Footer>
     </div>
   );
 };

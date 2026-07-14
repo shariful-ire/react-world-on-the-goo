@@ -20,9 +20,11 @@ const Countries = ({countriesPromise}) => {
   
   return (
     <div>
-      <h1>In the countries: {countries.length}</h1>
-      <p>Total Country visited : {visitedCountries.length}</p>
+        <div className='bg-gray-300 h-16 mx-auto my-auto p-4 flex rounded-xl mb-6 '> 
+              <h1 className=' mx-auto my-auto font-bold text-green-600'>In the countries: {countries.length}</h1>
+              <p className=' mx-auto my-auto  font-bold text-green-600'>Total Country visited : {visitedCountries.length}</p>
 
+        </div>
        <div className='Countries'>
           {
             countries.map(country=><Country

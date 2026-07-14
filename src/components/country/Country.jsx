@@ -24,7 +24,7 @@ const Country = ({ country, handleVisitedCountries }) => {
             </h3>
             <p>Population: {country.population.population}</p>
            
-            <button onClick={handleVisited}>
+            <button onClick={handleVisited} className='border border-2 border-b-amber-950 p-1.5 rounded-2xl'>
             {
                 visited? 'Visited': 'Not-visited'
             }
